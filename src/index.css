@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-display: 'Cinzel', serif;
+    --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0d11;
+    color: #e5e7eb;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0d11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272a33;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
